@@ -1,0 +1,17 @@
+mkdir cohort13mergedemo
+cd cohort13mergedemo/
+touch index.html
+git init
+git add index.html
+git commit -m"added index file"
+
+git checkout -b css-branch
+touch style.css
+vi style.css
+git add style.css
+git commit -m"added styles"
+
+git checkout main
+git merge css-branch
+git push -u origin css-branch
+git push
